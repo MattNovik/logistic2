@@ -91,7 +91,6 @@
     @include vp--767 {
       margin: 0;
 
-
       &:first-of-type {
         margin: 0;
       }
@@ -110,6 +109,7 @@
       height: size-desktop(373px);
       margin: 0 0 size-desktop(15px);
       border-radius: 10px;
+      object-fit: cover;
 
       @include vp--1439 {
         height: 373px;
@@ -162,34 +162,34 @@
     height: 100%;
     transform: translate(100%, 0);
     transition: transform $trans--600, opacity $trans--600;
-    background-color: rgba($color-default-white, .7);
-    box-shadow: -24px 0px 8px 3px rgba($color-default-white, .7);
+    background-color: rgba($color-default-white, 0.7);
+    box-shadow: -24px 0px 8px 3px rgba($color-default-white, 0.7);
 
     h4 {
       text-align: left;
       margin: size-desktop(20px) size-desktop(20px) size-desktop(20px) 0;
-      font-size: size-desktop(27px);
+      font-size: size-desktop(24px);
       line-height: size-desktop(29px);
     }
 
     p {
       text-align: left;
-      font-size: size-desktop(14px);
-      line-height: size-desktop(20px);
+      font-size: size-desktop(12px);
+      line-height: size-desktop(18px);
       margin: 0 size-desktop(20px) 0 0;
     }
 
     @include vp--1439 {
       h4 {
         margin: 20px 20px 20px 0;
-        font-size: 27px;
+        font-size: 24px;
         line-height: 29px;
       }
 
       p {
         margin: 0 20px 0 0;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
       }
     }
   }

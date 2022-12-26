@@ -97,8 +97,8 @@
       margin: 0;
       font-family: $font-family--roboto;
       font-weight: 500;
-      font-size: size-desktop(22px);
-      line-height: size-desktop(26px);
+      font-size: size-desktop(18px);
+      line-height: size-desktop(23px);
       color: $color-default-white;
     }
 
@@ -106,8 +106,8 @@
       width: calc(50% - 15px);
 
       p {
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 18px;
+        line-height: 23px;
       }
     }
 
@@ -261,7 +261,7 @@
 
       &:hover,
       &:focus {
-        border: solid size-desktop(2px) rgba($color-default-black, .6);
+        border: solid size-desktop(2px) rgba($color-default-black, 0.6);
 
         &:-webkit-autofill {
           box-shadow: inset 0 0 0 1000px $color-default-white;
@@ -284,7 +284,7 @@
 
         &:hover,
         &:focus {
-          border: solid 2px rgba($color-default-black, .6);
+          border: solid 2px rgba($color-default-black, 0.6);
         }
       }
 
