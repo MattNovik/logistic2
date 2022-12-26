@@ -1,0 +1,27 @@
+mixin feedback(data)
+  section.feedback#order
+    .feedback__container
+      .feedback__info-block
+        h2!= data.title
+        p!= data.text
+      .feedback__form-wrapper(data-validate)
+        form(action="#", method="POST")
+          .feedback__form-items-wrapper
+            .feedback__item(data-validate-type="text")
+              label
+                input(type="text", name="user-name", placeholder="Имя*", required)
+                span.feedback__label
+                  span.feedback__label-error Некорректный формат данных
+            .feedback__item(data-validate-type="phone")
+              label
+                input(type="tel", name="telephone", placeholder="Телефон*", required)
+                span.feedback__label
+                  span.feedback__label-error Некорректный формат данных
+          .feedback__item(data-validate-type="text")
+            label
+              textarea(name="text", cols="30", rows="10", placeholder="Введите ваше сообщение...*",  required)
+              span.feedback__label
+                span.feedback__label-error Некорректный формат данных
+          button.button.feedback__submit-btn(type="submit" data-open-modal="modal-message") Написать
+  +modal("modal--message modal--no-scale modal--translate")(data-modal="modal-message")
+        +modal-message()

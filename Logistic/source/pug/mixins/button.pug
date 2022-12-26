@@ -1,0 +1,12 @@
+mixin button(options = {})
+  - const dataModal = options.dataModal ? options.dataModal : false
+  if (options.type === 'link')
+    a(class= 'button ' + options.mod, href=options.href, data-open-modal=dataModal)&attributes(attributes)
+      if (options.icon)
+        +icon(options.icon, options.width, options.height)
+      span!= options.content
+  else
+    button(class= 'btn-reset button ' + options.mod, type=options.type, data-open-modal=dataModal)&attributes(attributes)
+      if (options.icon)
+        +icon(options.icon, options.width, options.height)
+      span!= options.content

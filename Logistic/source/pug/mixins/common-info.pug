@@ -1,0 +1,8 @@
+mixin commonInfo(data)
+  section.common-info#about
+    .common-info__container
+      .common-info__design
+      .common-info__info
+        h1!= data.title
+        each text,index in data.infoText
+          p!= text.text

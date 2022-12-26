@@ -1,0 +1,8 @@
+mixin slider(data)
+  section.slider
+      .slider-container
+        .swiper-wrapper
+          each slide, index in data
+            .swiper-slide
+              +picture(slide.path, slide.name, slide.format, slide.width, slide.height, slide.altText)
+        .swiper-pagination

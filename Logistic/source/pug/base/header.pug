@@ -1,0 +1,55 @@
+mixin header(headerMods, currentPage)
+  -
+    var headerLinks = [
+      {
+        href: "#about",
+        text: "О нас",
+        target: '#about',
+      },
+      {
+        href: "#services",
+        text: "услуги",
+        target: '#services',
+      },
+      {
+        href: "#order",
+        text: "заказ",
+        target: '#order',
+      },
+      {
+        href: "#contacts",
+        text: "контакты",
+        target: '#contacts',
+      },
+    ]
+
+  header.header(class=headerMods)
+    .header__wrapper
+      if(currentPage === "main")
+        a.header__logo
+          +picture("content", "logo-3", "png", 200, 70, "logo")
+      else
+        a.header__logo(href="main.html", aria-label="Переход на главную")
+          +picture("content", "logo-3", "png", 200, 70, "logo")
+      nav.main-nav
+        .main-nav__wrapper.main-nav__wrapper-des
+          ul.main-nav__list
+            each link, index in headerLinks
+              li.main-nav__item
+                if(index === currentPage)
+                  a.main-nav__link.main-nav__link--active.trigger(data-target=link.target)=link.text
+                else
+                  a.main-nav__link.trigger(data-mt-duration="300" data-target=link.target)=link.text
+        button.main-nav__toggle(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+          span.burger-menu
+        .main-nav__overlay
+        .main-nav__wrapper.main-nav__wrapper-mob
+          ul.main-nav__list
+            each link, index in headerLinks
+              li.main-nav__item
+                if(index === currentPage)
+                  a.main-nav__link.main-nav__link--active.trigger(data-target=link.target)=link.text
+                else
+                  a.main-nav__link.trigger(data-mt-duration="300" data-target=link.target)=link.text
+          button.main-nav__close(type="button", aria-label="закрытие меню", aria-pressed="false" )
+            +icon("icon-close", 15,15)

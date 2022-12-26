@@ -1,0 +1,12 @@
+mixin modulesTypes(data)
+  section.modules-types#services
+    .modules-types__container
+      .modules-types__list
+        each item, index in data
+          li.modules-types__item
+            .modules-types__link(href=item.link)
+              +picture(item.path, item.name, item.format, item.width, item.height, item.altText)
+              p!=item.title
+              .modules-types__item-info
+                h4!=item.infoTitle
+                p!=item.info

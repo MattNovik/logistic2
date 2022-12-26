@@ -1,0 +1,13 @@
+mixin footer(data, footerMods)
+  footer.footer#contacts(class=footerMods)
+    .footer__container
+      //-.footer__design
+      .footer__contacts
+          h2 контакты
+          a.footer__adress(href=data.adressLink target="_blank")!= data.adress
+          .footer__wrapper-tel-mail
+            //-a.footer__tel(href="tel:" + data.telType target="_blank")!= data.tel
+            p.footer__rec!= data.rec
+            a.footer__email(href="mailto:" + data.mailType target="_blank")!= data.mail
+      .footer__map
+        != data.map

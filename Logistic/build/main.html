@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Logistic</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ProjectName — описание">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 20 20"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></symbol></svg></div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrapper"><a class="header__logo">
+            <picture>
+              <source type="image/webp" srcset="img/content/logo-3.webp, img/content/logo-3@2x.webp 2x"><img src="img/content/logo-3.png" srcset="img/content/logo-3@2x.png 2x" width="200" height="70" alt="logo">
+            </picture></a>
+          <nav class="main-nav">
+            <div class="main-nav__wrapper main-nav__wrapper-des">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link trigger" data-mt-duration="300" data-target="#about">О нас</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link trigger" data-mt-duration="300" data-target="#services">услуги</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link trigger" data-mt-duration="300" data-target="#order">заказ</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link trigger" data-mt-duration="300" data-target="#contacts">контакты</a>
+                </li>
+              </ul>
+            </div>
+            <button class="main-nav__toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"><span class="burger-menu"></span></button>
+            <div class="main-nav__overlay"></div>
+            <div class="main-nav__wrapper main-nav__wrapper-mob">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link trigger" data-mt-duration="300" data-target="#about">О нас</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link trigger" data-mt-duration="300" data-target="#services">услуги</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link trigger" data-mt-duration="300" data-target="#order">заказ</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link trigger" data-mt-duration="300" data-target="#contacts">контакты</a>
+                </li>
+              </ul>
+              <button class="main-nav__close" type="button" aria-label="закрытие меню" aria-pressed="false">
+                <svg width="15" height="15" aria-hidden="true">
+                  <use xlink:href="#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <section class="slider">
+            <div class="slider-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/slider/bg5.webp, img/content/slider/bg5@2x.webp 2x"><img src="img/content/slider/bg5.jpg" srcset="img/content/slider/bg5@2x.jpg 2x" width="271" height="271" alt="2">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/slider/bg2.webp, img/content/slider/bg2@2x.webp 2x"><img src="img/content/slider/bg2.jpg" srcset="img/content/slider/bg2@2x.jpg 2x" width="271" height="271" alt="2">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/slider/bg3.webp, img/content/slider/bg3@2x.webp 2x"><img src="img/content/slider/bg3.jpg" srcset="img/content/slider/bg3@2x.jpg 2x" width="271" height="271" alt="2">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </section>
+          <section class="common-info" id="about">
+            <div class="common-info__container">
+              <div class="common-info__design"></div>
+              <div class="common-info__info">
+                <h1>«ЕС Транспорт» – логистическая Компания в России</h1>
+                <p>Специалисты логистической Компании «АМГ-ФОРВАРДИНГ» знают, как организовать перевозки во все регионы России. Мы предлагаем не только отдельные услуги, но также организовываем комплексные работы. Мы не только динамично развивающаяся компания, но и команда профессионалов логистики.</p>
+                <p>Мы стремимся к постоянному развитию, регулярно расширяя перечень предлагаемых услуг.
+ Уже сейчас вы можете обратиться к специалистам «АМГ-ФОРВАРДИНГ», чтобы заказать
+ логистические услуг по международным перевозкам. Мы предложим комплексные решения
+ для ваших задач.</p>
+              </div>
+            </div>
+          </section>
+          <div class="world-map-wrapper">
+            <section class="modules-types" id="services">
+              <div class="modules-types__container">
+                <div class="modules-types__list">
+                  <li class="modules-types__item">
+                    <div class="modules-types__link" href="#">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/train.webp, img/content/train@2x.webp 2x"><img src="img/content/train.jpg" srcset="img/content/train@2x.jpg 2x" width="244" height="373" alt="train">
+                      </picture>
+                      <p>Ж/Д ПЕРЕВОЗКИ</p>
+                      <div class="modules-types__item-info">
+                        <h4>Ж/Д перевозки</h4>
+                        <p>Удобный и надежный вид доставки груза на значительные расстояния и в труднодоступные районы. Мы предоставляем услуги железнодорожных перевозок грузов разных типов, под задачи вашего бизнеса</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="modules-types__item">
+                    <div class="modules-types__link" href="#">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/air.webp, img/content/air@2x.webp 2x"><img src="img/content/air.jpg" srcset="img/content/air@2x.jpg 2x" width="244" height="373" alt="air">
+                      </picture>
+                      <p>АВИАПЕРЕВОЗКИ</p>
+                      <div class="modules-types__item-info">
+                        <h4>Авиаперевозки</h4>
+                        <p>Авиаперевозки в настоящее время пользуются довольно большим спросом. Они используются в основном для доставки скоропортящихся и ценных грузов или же при необходимости быстро транспортировать товар</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="modules-types__item">
+                    <div class="modules-types__link" href="#">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/water.webp, img/content/water@2x.webp 2x"><img src="img/content/water.jpg" srcset="img/content/water@2x.jpg 2x" width="244" height="373" alt="water">
+                      </picture>
+                      <p>МОРСКИЕ ПЕРЕВОЗКИ</p>
+                      <div class="modules-types__item-info">
+                        <h4>Морские перевозки</h4>
+                        <p>К главной особенности данного вида перевозок можно отнести то, что перевозимый груз помещается в универсальные контейнеры, которые можно перевозить не только на морских судах, но и по железной или автомобильной дороге. А это значит,  что после доставки морем, груз можно поместить на Ж/Д пути без перетарки</p>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+              </div>
+            </section>
+            <section class="feedback" id="order">
+              <div class="feedback__container">
+                <div class="feedback__info-block">
+                  <h2>НАПИШИТЕ НАМ!</h2>
+                  <p>Для заказа перевозки грузов вполне достаточно нам написать или позвонить. Точно указанные сведения – а это габариты груза, его характеристики и вес, количество мест, пункты назначения и отправки – помогут специалисту просчитать действительно оптимальные варианты его доставки.</p>
+                </div>
+                <div class="feedback__form-wrapper" data-validate>
+                  <form action="#" method="POST">
+                    <div class="feedback__form-items-wrapper">
+                      <div class="feedback__item" data-validate-type="text">
+                        <label>
+                          <input type="text" name="user-name" placeholder="Имя*" required><span class="feedback__label"><span class="feedback__label-error">Некорректный формат данных</span></span>
+                        </label>
+                      </div>
+                      <div class="feedback__item" data-validate-type="phone">
+                        <label>
+                          <input type="tel" name="telephone" placeholder="Телефон*" required><span class="feedback__label"><span class="feedback__label-error">Некорректный формат данных</span></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="feedback__item" data-validate-type="text">
+                      <label>
+                        <textarea name="text" cols="30" rows="10" placeholder="Введите ваше сообщение...*" required></textarea><span class="feedback__label"><span class="feedback__label-error">Некорректный формат данных</span></span>
+                      </label>
+                    </div>
+                    <button class="button feedback__submit-btn" type="submit" data-open-modal="modal-message">Написать</button>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <div class="modal modal--preload modal--message modal--no-scale modal--translate" data-modal="modal-message">
+              <div class="modal__wrapper">
+                <div class="modal__overlay" data-close-modal></div>
+                <div class="modal__content">
+                  <div class="modal__message">
+                    <h4>Ваше сообщение успешно доставлено!</h4>
+                    <p>В ближайшее время мы свяжемся с вами</p>
+                  </div>
+                  <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal>
+                    <svg width="15" height="15" aria-hidden="true">
+                      <use xlink:href="#icon-close"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer" id="contacts">
+        <div class="footer__container">
+          <div class="footer__contacts">
+            <h2>контакты</h2><a class="footer__adress" href="https://www.google.com/maps/place/%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80-%D1%82.,+97,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+196084/@59.8934514,30.3178541,17z/data=!4m2!3m1!1s0x46963069214f8573:0xfacc04c89ed28c7b" target="_blank">Адрес: 196084, Санкт-Петербург&nbsp;г, Московский&nbsp;пр-кт, дом&nbsp;№&nbsp;97, литер&nbsp;А, помещение&nbsp;11-Н, офис&nbsp;403, комната&nbsp;7</a>
+            <div class="footer__wrapper-tel-mail">
+              <p class="footer__rec">ИНН: 7839069704 КПП: 781001001</p><a class="footer__email" href="mailto:managerestransport@gmail.ru" target="_blank">Email: managerestransport@gmail.ru</a>
+            </div>
+          </div>
+          <div class="footer__map"><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.3312368545098!2d30.315665416318!3d59.89345138185976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963069214f8573%3A0xfacc04c89ed28c7b!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0L_RgC3Rgi4sIDk3LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk2MDg0!5e0!3m2!1sru!2sru!4v1639924694722!5m2!1sru!2sru' style='border:0;' allowfullscreen='' loading='lazy'></iframe>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
