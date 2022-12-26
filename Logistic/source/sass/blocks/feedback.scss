@@ -384,7 +384,7 @@
     transition: color $trans--300;
 
     &:hover {
-      color: $color-default-black;
+      color: #fefeff;
     }
 
     @include vp--1439 {
