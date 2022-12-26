@@ -1,7 +1,7 @@
 .footer {
   min-height: size-desktop(100px);
   padding: 0 size-desktop(98px);
-  background-color: $color-default-black;
+  background-color: #fefeff;
 
   @include vp--1439 {
     min-height: 100px;
@@ -53,7 +53,7 @@
     font-size: size-desktop(26px);
     line-height: size-desktop(39px);
     text-transform: uppercase;
-    color: $color-default-white;
+    color: #0d1821;
 
     @include vp--1439 {
       margin: 0 0 25px;
@@ -76,7 +76,7 @@
 
   p {
     margin: 0 0 size-desktop(25px);
-    color: $color-default-white;
+    color: #0d1821;
     font-family: $font-family--roboto;
     font-weight: normal;
     font-size: size-desktop(22px);
@@ -106,7 +106,7 @@
     font-weight: normal;
     font-size: size-desktop(22px);
     line-height: size-desktop(31px);
-    color: $color-default-white;
+    color: #0d1821;
     transition: text-decoration $trans--300;
 
     &:hover {

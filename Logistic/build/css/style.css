@@ -1421,7 +1421,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   padding: 0 6.8055555556vw 0 3.4722222222vw;
-  background-color: #000000;
+  background-color: #fefeff;
 }
 
 .header__wrapper {
@@ -1468,7 +1468,7 @@ button,
   top: 30px;
   width: 30px;
   height: 30px;
-  border: solid 2px #ffffff;
+  border: solid 2px #0d1821;
   border-radius: 50%;
   outline: solid 1px rgba(255, 255, 255, 0);
   cursor: pointer;
@@ -1483,11 +1483,11 @@ button,
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  fill: #ffffff;
+  fill: #0d1821;
 }
 
 .main-nav__close:hover {
-  outline: solid 1px #ffffff;
+  outline: solid 1px #0d1821;
 }
 
 .main-nav__overlay {
@@ -1545,7 +1545,7 @@ button,
 }
 
 .main-nav__item a {
-  color: #ffffff;
+  color: #0d1821;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
   font-size: 1.25vw;
@@ -1556,7 +1556,7 @@ button,
 .footer {
   min-height: 6.9444444444vw;
   padding: 0 6.8055555556vw;
-  background-color: #000000;
+  background-color: #fefeff;
 }
 
 .footer__container {
@@ -1589,12 +1589,12 @@ button,
   font-size: 1.8055555556vw;
   line-height: 2.7083333333vw;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #0d1821;
 }
 
 .footer p {
   margin: 0 0 1.7361111111vw;
-  color: #ffffff;
+  color: #0d1821;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
   font-size: 1.5277777778vw;
@@ -1608,7 +1608,7 @@ button,
   font-weight: normal;
   font-size: 1.5277777778vw;
   line-height: 2.1527777778vw;
-  color: #ffffff;
+  color: #0d1821;
   -webkit-transition: -webkit-text-decoration 0.3s ease;
   transition: -webkit-text-decoration 0.3s ease;
   transition: text-decoration 0.3s ease;
@@ -1650,7 +1650,7 @@ button,
   min-width: 5.6944444444vw;
   margin: 0 4.5138888889vw 0 0;
   border-left: solid 1.0416666667vw #ffffff;
-  border-right: solid 1.0416666667vw #d6f80b;
+  border-right: solid 1.0416666667vw #0b032d;
 }
 
 .modal {
@@ -1804,7 +1804,9 @@ button,
 
 .common-info {
   padding: 0 10.7638888889vw 0 6.8055555556vw;
-  background-color: #000000;
+  background-color: #fefeff;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(13, 24, 33, 0.2);
+  box-shadow: 0px 5px 8px 0px rgba(13, 24, 33, 0.2);
 }
 
 .common-info__design {
@@ -1812,36 +1814,33 @@ button,
   min-height: 100%;
   min-width: 5.6944444444vw;
   margin: 0 4.5138888889vw 0 0;
-  border-left: solid 1.0416666667vw #ffffff;
-  border-right: solid 1.0416666667vw #d6f80b;
-}
-
-.common-info__design::before {
-  content: "";
-  position: absolute;
-  top: 10%;
-  right: 100%;
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
-  width: 6.1111111111vw;
-  height: 4.5833333333vw;
-  background-image: url("../img/svg/truck.png");
-  background-size: cover;
-  z-index: 10;
-}
-
-.common-info__design::after {
-  content: "";
-  position: absolute;
-  bottom: 10%;
-  left: 100%;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  width: 6.1111111111vw;
-  height: 4.5833333333vw;
-  background-image: url("../img/svg/truck.png");
-  background-size: cover;
-  z-index: 10;
+  border-left: solid 1.0416666667vw #f46036;
+  border-right: solid 1.0416666667vw #0b032d;
+  /*     &::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 100%;
+    transform: rotate(270deg);
+    width: size-desktop(88px);
+    height: size-desktop(66px);
+    background-image: url("../img/svg/truck.png");
+    background-size: cover;
+    z-index: 10;
+  } */
+  /*
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 100%;
+    transform: rotate(90deg);
+    width: size-desktop(88px);
+    height: size-desktop(66px);
+    background-image: url("../img/svg/truck.png");
+    background-size: cover;
+    z-index: 10;
+  } */
 }
 
 .common-info__container {
@@ -1854,7 +1853,7 @@ button,
 .common-info h1 {
   padding: 3.125vw 0 0 0;
   margin: 0 0 3.125vw;
-  color: #ffffff;
+  color: #0d1821;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: bold;
   font-size: 2.5vw;
@@ -1864,7 +1863,7 @@ button,
 .common-info p {
   padding: 0;
   margin: 0 0 3.125vw;
-  color: #ffffff;
+  color: #0d1821;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   font-size: 1.25vw;
@@ -2085,7 +2084,7 @@ button,
   font-weight: bold;
   font-size: 2.5vw;
   line-height: 3.6805555556vw;
-  color: #d6f80b;
+  color: #0b032d;
 }
 
 .feedback__item {
@@ -2201,7 +2200,7 @@ button,
 
 .feedback__item.is-invalid input,
 .feedback__item.is-invalid textarea {
-  border: solid 0.1388888889vw #C54B67;
+  border: solid 0.1388888889vw #c54b67;
 }
 
 .feedback__label {
@@ -2229,13 +2228,13 @@ button,
   border: none;
   outline: none;
   border-radius: 10px;
-  background-color: #d6f80b;
+  background-color: #0b032d;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 1.5277777778vw;
   line-height: 2.0833333333vw;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.62);
+  color: #fefeff;
   cursor: pointer;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
@@ -2246,6 +2245,7 @@ button,
 }
 
 .world-map-wrapper {
+  margin: 1.3888888889vw 0 0 0;
   position: relative;
   background-image: url("../img/content/undercoverDesk.png");
   background-size: contain;
@@ -2336,7 +2336,7 @@ button,
     min-width: 82px;
     margin: 0 65px 0 0;
     border-left: solid 15px #ffffff;
-    border-right: solid 15px #d6f80b;
+    border-right: solid 15px #0b032d;
   }
 
   .slider {
@@ -2355,8 +2355,8 @@ button,
   .common-info__design {
     min-width: 82px;
     margin: 0 65px 0 0;
-    border-left: solid 15px #ffffff;
-    border-right: solid 15px #d6f80b;
+    border-left: solid 15px #f46036;
+    border-right: solid 15px #0b032d;
   }
 
   .common-info__design::before {
@@ -2532,7 +2532,7 @@ button,
 
   .feedback__item.is-invalid input,
   .feedback__item.is-invalid textarea {
-    border: solid 2px #C54B67;
+    border: solid 2px #c54b67;
   }
 
   .feedback__label {
@@ -2700,7 +2700,7 @@ button,
     height: 40px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0);
-    border: 2px solid #ffffff;
+    border: 2px solid #0d1821;
     outline: none;
     cursor: pointer;
   }
@@ -2713,7 +2713,7 @@ button,
     display: block;
     width: 16px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #0d1821;
     border-radius: 8px;
   }
 
@@ -2724,7 +2724,7 @@ button,
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: #0d1821;
     -webkit-transition: width 0.3s ease;
     transition: width 0.3s ease;
     border-radius: 8px;
@@ -2737,7 +2737,7 @@ button,
     right: 0;
     width: 50%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: #0d1821;
     -webkit-transition: width 0.3s ease;
     transition: width 0.3s ease;
     border-radius: 8px;
@@ -2769,7 +2769,7 @@ button,
     height: 100%;
     min-height: 100vh;
     padding: 60px 80px;
-    background-color: #000000;
+    background-color: #fefeff;
     z-index: 30;
   }
 
@@ -2854,36 +2854,32 @@ button,
   .common-info__container {
     position: relative;
     padding: 0 30px;
-    border-left: solid 15px #ffffff;
-    border-right: solid 15px #d6f80b;
-  }
-
-  .common-info__container::before {
-    content: "";
-    position: absolute;
-    top: 30%;
-    right: 100%;
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
-    width: 70px;
-    height: 63px;
-    background-image: url("../img/svg/truck.png");
-    background-size: cover;
-    z-index: 10;
-  }
-
-  .common-info__container::after {
-    content: "";
-    position: absolute;
-    bottom: 30%;
-    left: 100%;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    width: 70px;
-    height: 63px;
-    background-image: url("../img/svg/truck.png");
-    background-size: cover;
-    z-index: 10;
+    border-left: solid 15px #f46036;
+    border-right: solid 15px #0b032d;
+    /*       &::before {
+      content: "";
+      position: absolute;
+      top: 30%;
+      right: 100%;
+      transform: rotate(270deg);
+      width: 70px;
+      height: 63px;
+      background-image: url("../img/svg/truck.png");
+      background-size: cover;
+      z-index: 10;
+    } */
+    /*       &::after {
+      content: "";
+      position: absolute;
+      bottom: 30%;
+      left: 100%;
+      transform: rotate(90deg);
+      width: 70px;
+      height: 63px;
+      background-image: url("../img/svg/truck.png");
+      background-size: cover;
+      z-index: 10;
+    } */
   }
 
   .common-info h1 {
@@ -2999,6 +2995,7 @@ button,
   }
 
   .world-map-wrapper {
+    margin: 20px 0 0 0;
     background-size: cover;
     background-position: bottom center;
   }
@@ -3111,37 +3108,35 @@ button,
   .common-info p:first-of-type {
     position: relative;
     padding: 0 16px 50px 16px;
-    border-bottom: solid 15px #ffffff;
-  }
-
-  .common-info p:first-of-type::before {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 15%;
-    width: 70px;
-    height: 63px;
-    background-image: url("../img/svg/truck.png");
-    background-size: cover;
-    z-index: 10;
+    border-bottom: solid 15px #f46036;
+    /*         &::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 15%;
+      width: 70px;
+      height: 63px;
+      background-image: url("../img/svg/truck.png");
+      background-size: cover;
+      z-index: 10;
+    } */
   }
 
   .common-info p:last-of-type {
     position: relative;
     padding: 0 16px 50px 16px;
-    border-bottom: solid 15px #d6f80b;
-  }
-
-  .common-info p:last-of-type::before {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    right: 20%;
-    width: 70px;
-    height: 63px;
-    background-image: url("../img/svg/truck.png");
-    background-size: cover;
-    z-index: 10;
+    border-bottom: solid 15px #0b032d;
+    /*         &::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      right: 20%;
+      width: 70px;
+      height: 63px;
+      background-image: url("../img/svg/truck.png");
+      background-size: cover;
+      z-index: 10;
+    } */
   }
 
   .modules-types {

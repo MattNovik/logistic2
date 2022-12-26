@@ -1,9 +1,11 @@
 .world-map-wrapper {
+  margin: size-desktop(20px) 0 0 0;
   position: relative;
   background-image: url("../img/content/undercoverDesk.png");
   background-size: contain;
 
   @include vp--1023 {
+    margin: 20px 0 0 0;
     background-size: cover;
     background-position: bottom center;
   }
